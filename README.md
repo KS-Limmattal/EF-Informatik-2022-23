@@ -19,4 +19,4 @@ Siehe [Seite zu Git](GIT.md)
 ## Aufgaben
 
 - [Einführung in Git und Github](https://classroom.github.com/a/hwGPi-nv)
-- [Aufgabe 1: Grundlagen]()
+- [Aufgabe 1: Grundlagen](https://classroom.github.com/a/CMWP8Mmw)
