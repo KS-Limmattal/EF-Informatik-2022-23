@@ -14,7 +14,9 @@
 
 ## Arbeit mit Git
 
-Siehe [Seite zu Git](GIT.md)
+- [What are GitHub pull requests](https://axolo.co/blog/p/part-1-what-are-github-pull-requests) (wichtig dabei vor allem die erste Grafik, die den Workflow "branch -> commit -> pull request -> discuss -> merge" abbildet)
+- [Git Workflow and commands](https://www.cidevops.com/2018/01/git-workflow-and-commands.html) (Interaktion zwischen lokalen und remote Dateien)
+- [Erklärungen von Roland Lötscher](GIT.md)
 
 ## Aufgaben
 
