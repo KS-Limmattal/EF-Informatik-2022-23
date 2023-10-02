@@ -23,4 +23,4 @@
 
 - [Einführung in Git und Github](https://classroom.github.com/a/hwGPi-nv)
 - [Aufgabe 1: Grundlagen](https://classroom.github.com/a/CMWP8Mmw)
-- [Aufgabe 2: Zahlen und Schleifen](https://classroom.github.com/a/IDLzyghl)
+- [Aufgabe 2: Zahlen und Schleifen](https://classroom.github.com/a/gdnldT_S)
