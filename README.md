@@ -31,4 +31,4 @@ Skript 1.1-1.4 & 1.6 bis Aufgabe 7 (ohne Details der Aufgaben 4 & 5)
 - Primitive Datentypen & String
 - Verzweigungen (if / else)
 - Binär- und Hexadezimalsystem, Zweierkomplement
-- Grundidee der Speicherung von Fliesskommazahlen mit Vorzeichen, Exponent und Mantisse verstehen und erklären können. Konversionsprobleme mit Dezimalzahlen und float/ double.
+- Grundidee der Speicherung von Fliesskommazahlen mit Vorzeichen, Exponent und Mantisse verstehen und erklären können. Konversionsprobleme zwischen Dezimalzahlen und float/ double.
