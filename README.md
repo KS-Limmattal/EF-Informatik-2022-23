@@ -12,6 +12,7 @@
 - [Java-Skript](Java-Skript.pdf)
 - [w3schools Java Tutorial](https://www.w3schools.com/java/default.asp)
 - [GeeksForGeeks Java Tutorial](https://www.geeksforgeeks.org/java/)
+- Naming Conventions for Java: [Java Code Conventions](https://www.oracle.com/technetwork/java/codeconventions-150003.pdf) (Abschnitt 9)
 
 ## Arbeit mit Git
 
