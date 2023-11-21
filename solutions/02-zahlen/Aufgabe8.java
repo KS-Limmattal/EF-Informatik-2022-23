@@ -67,16 +67,16 @@ public class Aufgabe8 {
       // Aufgabe b)
       public static void primeFactorisation(int n) {
             System.out.print("Prime factorisation of " + n + " = ");
-            int factorCounter = 2;
+            int factor = 2;
             while (n != 1) {
-                  if (n % factorCounter == 0) {
-                        System.out.print(factorCounter);
-                        n = n / factorCounter;
+                  if (n % factor == 0) {
+                        System.out.print(factor);
+                        n = n / factor;
                         if (n != 1) {
                               System.out.print(" * ");
                         }
                   } else {
-                        factorCounter++;
+                        factor++;
                   }
             }
             System.out.println();
@@ -110,7 +110,7 @@ public class Aufgabe8 {
       /*
        * This method formats a given double x as a String showing the value of x rounded to two decimals.
        */
-      public static String decimal(double x) {
+      public static String getAsRoundedCurrency(double x) {
             long cents = Math.round(x * 100) % (Math.round(x) * 100);
             return Math.round(x) + "." + (cents < 10 ? "0" : "") + cents;
             /*
@@ -133,12 +133,20 @@ public class Aufgabe8 {
              */
       }
 
+      /*
+       * double ist hier die naheliegendste Wahl, da wir mit Kommazahlen arbeiten. In der Praxis würde aber wohl 
+       * BigDecimal verwendet, da ja 0.1 in double nicht exakt gespeichert werden kann.
+       * Eine Alternative ist, die Beträge in Hundertstel- oder Tausendstelrappen als int zu speichern und beim Ausgeben
+       * in Franken und Rappen zu konvertieren. Nur ganze Rappen zu speichern ist bei sehr kleinen Frankenbeträgen oder 
+       * Zinssätzen nicht die beste Wahl - zumindest wenn es um Schuldzinsen geht, wird die Bank es vermeiden, 
+       * Zinsbeträge von Null zu verrechnen.
+       */
       public static void compoundInterest(double capital, double interestRate, int term) {
             System.out.println("Compound interest of " + interestRate + "% on a capital of " + capital + " over " + term
                         + " years");
             for (int i = 0; i <= term; i++) {
                   capital = capital + capital * interestRate / 100;
-                  System.out.println("Capital after " + i + " years = " + decimal(capital));
+                  System.out.println("Capital after " + i + " years = " + getAsRoundedCurrency(capital));
             }
       }
 
