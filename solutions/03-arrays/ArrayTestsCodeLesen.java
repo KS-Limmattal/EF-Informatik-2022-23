@@ -13,7 +13,7 @@
 			String[] d = c;
 			c = new int[2]; // Geht nicht, da c Typ String[] hat und deshalb nicht auf ein Array vom Typ int[] verweisen darf
 			String[] e = new String[b[0]]; // Geht! b wurde mit {0, 0, 0} initialisiert. Deshalb ist b[0] == 0, und ein Array der Länge 0
-			String[] e = new String[] {d}; // d ist nicht vom Typ String und kann deshalb nicht Element von e sein.
+			String[] e = new String[] {d}; // d ist nicht vom Typ String und kann deshalb nicht Element von e sein. Ausserdem wurde die Variable e bereits als String[] definiert und darf nicht nochmals definiert werden. Es gibt also zwei Fehler in dieser Zeile.
 		}	
 		
 		static void test2() {
