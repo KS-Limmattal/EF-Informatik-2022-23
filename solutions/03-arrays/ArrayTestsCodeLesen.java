@@ -59,7 +59,7 @@
 			test2();
 			
 			// 3) Was wird hier ausgegeben?
-			Arrays.toString(test3(2)); // ArrayIndexOutOfBoundsException (Array hat Länge 2. Es werden aber die Elemente mit Indizes 0 bis 2 durchlaufen, wovon das letzte gar nicht existiert)
+			Arrays.toString(test3(2)); // ArrayIndexOutOfBoundsException (Array hat Länge 1. Es werden aber die Elemente mit Indizes 0 bis 1 durchlaufen, wovon das letzte gar nicht existiert)
 			
 			int[] orderedList = new int[] {1, 3, 4, 8};
 			// 4a) welche Variablen sind beim ersten Erreichen der Zeile 41 bzw. 43 definiert, und welchen Wert haben sie?
