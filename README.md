@@ -26,6 +26,7 @@
 - [Aufgabe 1: Grundlagen](https://classroom.github.com/a/CMWP8Mmw)
 - [Aufgabe 2: Zahlen und Schleifen](https://classroom.github.com/a/gdnldT_S)
 - [Aufgabe 3: Arrays](https://classroom.github.com/a/G685Y4bY)
+- [Aufgabe 4: Rekursion](https://classroom.github.com/a/q5TrnwE_)
 
 ## Prüfungsstoff 1. Prüfung
 Skript 1.1-1.4 & 1.6 bis Aufgabe 7 (ohne Details der Aufgaben 4 & 5)
