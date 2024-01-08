@@ -27,6 +27,7 @@
 - [Aufgabe 2: Zahlen und Schleifen](https://classroom.github.com/a/gdnldT_S)
 - [Aufgabe 3: Arrays](https://classroom.github.com/a/G685Y4bY)
 - [Aufgabe 4: Rekursion](https://classroom.github.com/a/q5TrnwE_)
+- [Aufgabe 5a: Klassen](https://classroom.github.com/a/499RvKzX)
 
 ## Prüfungsstoff 1. Prüfung
 Skript 1.1-1.4 & 1.6 bis Aufgabe 7 (ohne Details der Aufgaben 4 & 5)
