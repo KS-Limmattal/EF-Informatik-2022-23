@@ -3,7 +3,7 @@
 ## Installation
 
 - Editor zur Java-Programmierung: [VS Code](https://code.visualstudio.com/) mit dem Extension Pack for Java (in VS Code installierbar)
-- Weitere sinnvolle Extension: Github Pull Requests and Issues
+- Weitere sinnvolle Extension: Github Pull Requests and IssuesZusatzaufgaben/
 
 ## Ressourcen
 
@@ -28,6 +28,7 @@
 - [Aufgabe 3: Arrays](https://classroom.github.com/a/G685Y4bY)
 - [Aufgabe 4: Rekursion](https://classroom.github.com/a/q5TrnwE_)
 - [Aufgabe 5a: Klassen](https://classroom.github.com/a/499RvKzX)
+- [Aufgabe 5: Buchausschnitt](Zusatzuebungen/Moessenboeck%20Sprechen%20Sie%20Java%20Kapitel%2010%20Klassen.pdf)
 
 ## Prüfungsstoff 1. Prüfung
 Skript 1.1-1.4 & 1.6 bis Aufgabe 7 (ohne Details der Aufgaben 4 & 5)
