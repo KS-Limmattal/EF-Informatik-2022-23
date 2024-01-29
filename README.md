@@ -29,6 +29,7 @@
 - [Aufgabe 4: Rekursion](https://classroom.github.com/a/q5TrnwE_)
 - [Aufgabe 5a: Klassen](https://classroom.github.com/a/499RvKzX)
 - [Aufgabe 5: Buchausschnitt](Zusatzuebungen/Moessenboeck%20Sprechen%20Sie%20Java%20Kapitel%2010%20Klassen.pdf)
+- [Aufgabe 5b: Klassen Fortsetzung](https://classroom.github.com/a/kFFJPblm)
 
 ## Prüfungsstoff 1. Prüfung
 Skript 1.1-1.4 & 1.6 bis Aufgabe 7 (ohne Details der Aufgaben 4 & 5)
