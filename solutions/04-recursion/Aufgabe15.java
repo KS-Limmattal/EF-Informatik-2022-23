@@ -96,43 +96,110 @@ public class Aufgabe15 {
             System.out.printf("Bewege Scheibe %d von der %s zur %s.%n", n, fromPeg, toPeg);
     }
 
-    /*
-     * Mergesort ist natürlicherweise rekursiv
-     */
-    public static void mergeSort(double[] array, int n) {
-        if (n < 2) {
-            return;
+    // Merge Sort von Jonatan
+    static int[] mergeSort(int[] in) {
+        if (in.length < 2) {
+            return in;
         }
-        int mid = n / 2;
-        double[] leftArray = Arrays.copyOf(array, mid);
-        double[] rightArray = Arrays.copyOfRange(array, mid, n);
+        // split array in two subarrays and sort them recursively
+        int[] a = mergeSort(Arrays.copyOf(in, in.length / 2));
+        int[] b = mergeSort(Arrays.copyOfRange(in, in.length / 2, in.length));
 
-        mergeSort(leftArray, mid);
-        mergeSort(rightArray, n - mid);
+        int[] out = new int[in.length];
 
-        merge(array, leftArray, rightArray, mid, n - mid);
+        int index_a = 0;
+        int index_b = 0;
+        for (int i = 0; i < in.length; i++) { // To reconnect the two Arrays together
+            if (index_a >= a.length) {
+                out[i] = b[index_b];
+                index_b++;
+                continue;
+            }
+            if (index_b >= b.length) {
+                out[i] = a[index_a];
+                index_a++;
+                continue;
+            }
+            if (a[index_a] < b[index_b]) {
+                out[i] = a[index_a];
+                index_a++;
+                continue;
+            }
+            out[i] = b[index_b];
+            index_b++;
+
+        }
+
+        return out;
+
+        // combine the sorted subarrays correctly
     }
 
-    public static void merge(
-            double[] array, double[] leftArray, double[] rightArray, int left, int right) {
-
-        int i = 0, j = 0, k = 0;
-        while (i < left && j < right) {
-            if (leftArray[i] <= rightArray[j]) {
+        // Mergesort von C. Weber - keine Ausgabetyp, da das Array direkt sortiert wird
+        public static void mergeSort(double[] array, int n) {
+            if (n < 2) {
+                return;
+            }
+            int mid = n / 2;
+            double[] leftArray = Arrays.copyOf(array, mid);
+            double[] rightArray = Arrays.copyOfRange(array, mid, n);
+    
+            mergeSort(leftArray, mid);
+            mergeSort(rightArray, n - mid);
+    
+            merge(array, leftArray, rightArray, mid, n - mid);
+        }
+    
+        public static void merge(
+                double[] array, double[] leftArray, double[] rightArray, int left, int right) {
+    
+            int i = 0, j = 0, k = 0;
+            while (i < left && j < right) {
+                if (leftArray[i] <= rightArray[j]) {
+                    array[k++] = leftArray[i++];
+                } else {
+                    array[k++] = rightArray[j++];
+                }
+            }
+            while (i < left) {
                 array[k++] = leftArray[i++];
-            } else {
+            }
+            while (j < right) {
                 array[k++] = rightArray[j++];
             }
         }
-        while (i < left) {
-            array[k++] = leftArray[i++];
-        }
-        while (j < right) {
-            array[k++] = rightArray[j++];
+
+    // Selection Sort von Matteo
+    static double[] veryCoolSort(double[] in) {
+        if (in.length == 1) {
+            return in;
+        } else {
+            double[] s = new double[in.length - 1];
+            double[] out = new double[in.length];
+            double[] newIn = new double[in.length - 1];
+            double save = in[0];
+            int ind = 0;
+            for (int i = 0; i < in.length; i++) {
+                if (in[i] < save) {
+                    ind = i;
+                    save = in[i];
+                }
+            }
+            out[0] = save;
+            int index = 0;
+            for (int i = 0; i < in.length; i++) {
+                if (i != ind) {
+                    s[index] = in[i];
+                    index++;
+                }
+            }
+            newIn = veryCoolSort(s);
+            for (int i = 0; i < newIn.length; i++) {
+                out[i + 1] = newIn[i];
+            }
+            return out;
         }
     }
-
-    // TODO: add solutions from students
 
     public static void main(String[] args) {
         // Test-Code zu Aufgabe a)
@@ -165,7 +232,7 @@ public class Aufgabe15 {
 
         // Test-Code zu Aufgabe f)
         System.out.println("Aufgabe f)");
-        move(4, "Kupfersäule", "Goldsäule", "Silbersäule");
+        move(4, "Säule 1", "Säule 2", "Säule 3");
         System.out.println();
 
         // Test-Code zu Aufgabe g)
@@ -173,6 +240,9 @@ public class Aufgabe15 {
         double[] a = { 5.4, 0.12, -22222, 121, -12.25, 0, 0.75, -5, 0, 500000, -1200 };
         double[] b = a.clone();
         mergeSort(b, b.length);
-        System.out.println("MergeSort: " + Arrays.toString(b));
+        System.out.println("Merge Sort von C. Weber: " + Arrays.toString(b));
+        System.out.println("Selection Sort von Matteo " + Arrays.toString(veryCoolSort(a)));
+        int[] c = { 2, 1, 5, 7, -1, 100, -12 };
+        System.out.println("Merge Sort von Jonatan (für int): " + Arrays.toString(mergeSort(c)));
     }
 }
