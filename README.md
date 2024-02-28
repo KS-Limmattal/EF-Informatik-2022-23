@@ -38,3 +38,12 @@ Skript 1.1-1.4 & 1.6 bis Aufgabe 7 (ohne Details der Aufgaben 4 & 5)
 - Verzweigungen (if / else)
 - Binär- und Hexadezimalsystem, Zweierkomplement
 - Grundidee der Speicherung von Fliesskommazahlen mit Vorzeichen, Exponent und Mantisse verstehen und erklären können. Konversionsprobleme zwischen Dezimalzahlen und float/ double.
+
+## Prüfungsstoff 3. Prüfung
+Skript S. 18-22 (plus S.23 Aufg. 2b)
+- Rekursion (Programmieraufgabe)
+- Klassen und Objekte: Begriffe, Grundlagen, Speicher
+- Konstruktoren, equals(), toString()
+- Encapsulation
+- statische und dynamische Methoden
+- sinnvolle praktische Übungen: S. 24 Aufg. 4 Nr. 1.-2. (ev. 3.)
